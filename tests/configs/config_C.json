@@ -1,0 +1,13 @@
+{
+    "cipher_type": "atbash",
+    "params": {
+        "cipher_type": "atbash"
+    },
+    "test_cases": {
+        "encode_basic": {"input": "AHOJ", "expected": "ZSLQ"},
+        "encode_lower": {"input": "ahoj", "expected": "zslq"},
+        "encode_mixed": {"input": "Ahoj Svete!", "expected": "Zslq Hevgv!"},
+        "encode_diacritics": {"input": "Příliš", "expected": "Kirolh"},
+        "decode_basic": {"input": "ZSLQ", "expected": "AHOJ"}
+    }
+}

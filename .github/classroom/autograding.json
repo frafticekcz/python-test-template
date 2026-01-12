@@ -1,0 +1,102 @@
+{
+  "tests": [
+    {
+      "name": "Message - vytvoření",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestMessage::test_message_creation -v",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Message - __str__",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestMessage::test_message_str -v",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Message - statistiky (znaky)",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestMessage::test_message_stats_char_count -v",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Message - statistiky (slova)",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestMessage::test_message_stats_word_count -v",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Message - statistiky (nejčastější písmeno)",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestMessage::test_message_stats_most_common -v",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Encoder - odstranění diakritiky",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_diacritics_removal -v",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Encoder - základní šifrování",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_encode_basic -v",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Encoder - malá písmena",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_encode_lowercase -v",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Encoder - smíšený text",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_encode_mixed_text -v",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Encoder - text s diakritikou",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_encode_with_diacritics -v",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Encoder - dešifrování",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_decode_basic -v",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Encoder - zachování čísel",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_encode_preserves_numbers -v",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Encoder - zachování interpunkce",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoder::test_encode_preserves_punctuation -v",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Encoder - symetrie (encode->decode)",
+      "setup": "",
+      "run": "python -m pytest tests/test_encoder.py::TestEncoderSymmetry::test_encode_decode_roundtrip -v",
+      "timeout": 10,
+      "points": 7
+    }
+  ]
+}

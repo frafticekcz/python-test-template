@@ -1,0 +1,13 @@
+{
+    "cipher_type": "caesar",
+    "params": {
+        "shift": 3
+    },
+    "test_cases": {
+        "encode_basic": {"input": "AHOJ", "expected": "DKRM"},
+        "encode_lower": {"input": "ahoj", "expected": "dkrm"},
+        "encode_mixed": {"input": "Ahoj Svete!", "expected": "Dkrm Vyhwh!"},
+        "encode_diacritics": {"input": "Příliš", "expected": "Sulolv"},
+        "decode_basic": {"input": "DKRM", "expected": "AHOJ"}
+    }
+}

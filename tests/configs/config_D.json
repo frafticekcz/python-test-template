@@ -1,0 +1,13 @@
+{
+    "cipher_type": "vigenere",
+    "params": {
+        "key": "KOD"
+    },
+    "test_cases": {
+        "encode_basic": {"input": "AHOJ", "expected": "KVRT"},
+        "encode_lower": {"input": "ahoj", "expected": "kvrt"},
+        "encode_mixed": {"input": "AB CD!", "expected": "KP FN!"},
+        "encode_diacritics": {"input": "Člověk", "expected": "Mzgfon"},
+        "decode_basic": {"input": "KVRT", "expected": "AHOJ"}
+    }
+}

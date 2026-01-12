@@ -1,0 +1,13 @@
+{
+    "cipher_type": "caesar",
+    "params": {
+        "shift": -5
+    },
+    "test_cases": {
+        "encode_basic": {"input": "AHOJ", "expected": "VCJE"},
+        "encode_lower": {"input": "ahoj", "expected": "vcje"},
+        "encode_mixed": {"input": "Dobry den!", "expected": "Yjwmt yzs!"},
+        "encode_diacritics": {"input": "Česky", "expected": "Xznft"},
+        "decode_basic": {"input": "VCJE", "expected": "AHOJ"}
+    }
+}
